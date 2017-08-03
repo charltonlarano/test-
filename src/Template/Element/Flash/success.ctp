@@ -3,6 +3,11 @@ if (!isset($params['escape']) || $params['escape'] !== false) {
     $message = h($message);
 }
 ?>
-<div id="success" class="alert alert-success fade in" onclick="this.classList.add('hidden')"><?= $message ?>
-	<a href="#" onclick="getElementById('success').style.display='none'" class="close">&times;</a>
+
+
+<div class="container">
+<div class="alert alert-success alert-dismissable fade in" onclick="this.classList.add('hidden')"><?= $message ?>
+    <a href="#" class="close" onclick="getElementById('success').style.display='none'" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> 
+
 </div>

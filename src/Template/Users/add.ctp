@@ -34,12 +34,12 @@
         </div>
   </div>
 
-<div style="margin-top:100px;">
+
 <div class="container">
 <div class="col-lg-12">
  <?= $this->Form->create($user) ?>
     <fieldset>
-        <legend><?= __('Edit User') ?></legend>
+        <legend><?= __('Create User') ?></legend>
              
 
           
@@ -74,6 +74,3 @@
     <?= $this->Form->end() ?>
 </div>
 </div>
-</div>
-
-

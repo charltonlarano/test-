@@ -13,7 +13,6 @@
 
 </head>
 <body>
-
    <div id="wrapper">
 
         <!-- Sidebar -->
@@ -44,15 +43,18 @@
             </ul>
         </div>
     </div>
+    </div>
+    </div>
 
-
+<div>
 <div class="container">
 <div class="col-lg-12">
-<div class=col-lg-3>
-<div style= "margin-top:100px;">
+<h3><?= __('User List') ?></h3>
+
     </div>
-    <div class="input-group">
-      <input type="text" class="form-control"   type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for...">
+   <div class="form-group">
+    <div class="col-lg-4" >
+          <input type="text" class="form-control"   type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for...">
       
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
@@ -96,7 +98,7 @@
 
                  <div id="id01" class="w3-modal">
                 
-                    <div class="w3-modal-content" style="width:1130px;">
+                    <div class="w3-modal-content" style="width:1130px; position: ">
                        <span onclick="getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
                         
                 
@@ -109,6 +111,7 @@
                  
                  </div>
                  <div id="myDIV" style="display:block;">
+
                       <iframe  style="  position:relative; " src=""  scrolling="no"  height="700px" width="1100px" name="iframe_a"></iframe>
                               
                   </div>
@@ -137,7 +140,9 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="paginator">
+
+
+       <div>
         <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('first')) ?>
             <?= $this->Paginator->prev('< ' . __('previous')) ?>
@@ -146,9 +151,11 @@
             <?= $this->Paginator->last(__('last') . ' >>') ?>
         </ul>
         <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
-    </div>
+
 </div>      
-</div>             
+</div>
+</body>
+             
        
           
 

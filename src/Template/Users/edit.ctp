@@ -38,8 +38,9 @@
 
 
 
+<div>
+<div class="container">
 
-<div  style="margin-top: 100px" class="container">
 
 
  <?= $this->Form->create($user) ?>
@@ -81,4 +82,5 @@
       </div>
     <?= $this->Form->end() ?>
 
+</div>
 </div>
